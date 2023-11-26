@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Coffee tree</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #8d614c;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+		
+		div {
+			color : #ffffff;
+			text-align : center
+		}
+		
+		img {
+			height:170px;
+			width:220px;
+			padding-top: 50px;
+			padding-right: 30px;
+			padding-bottom: 00px;
+			padding-left: 30px;
+			border: 2px;
+		}
+		
+		img:hover {
+			border: 4px solid #ffffff;
+		}
+		
+		table {
+				border: 2px;
+				border-color:#333000;
+		}
+		
+		button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+		
+		nav {
+			background-color: #333;
+			overflow: hidden;
+		}
+
+		nav a {
+			float: left;
+			display: block;
+			color: #fff; 
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		nav a:hover {
+			background-color: #ddd; 
+			color: #333;
+		}
+
+		nav a.active {
+			background-color: yellow;
+			color: #333;
+		}
+
+		
+		navbar a:hover, {
+			background-color: #ddd; 
+			color: #333; 
+		}
+		
+		footer {
+            background-color: #1e272e;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select, textarea{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+		
+		
+	</style>
+</head>
+<body>
+
+    <header>
+		<h1>COFFEE TREE</h1>
+    </header>
+	<nav>
+		<a href=" " class="active">Home</a>
+		<a href=" ">About Us</a>
+		<a href=" ">Contact Us</a>
+		
+	</nav>
+	<div>
+	<center>
+	<table>
+		<tr>
+		<td><center><img src = "D:\IP Project Final\Cappuccino.jpeg" ><br>Cappuccino : ₹300/(500g)</center></td>
+		<td><center><img src = "D:\IP Project Final\Caffè Americano.jpeg" ><br>Caffè Americano : ₹300/(500g)</center></td>
+		<td><center><img src = "D:\IP Project Final\Caffè macchiato.jpeg" ><br>Caffè macchiato : ₹300/(500g)</center></td>
+		</tr>
+		<tr>
+		<td><center><img src = "D:\IP Project Final\Cortado.jpeg" ><br>Cortado : ₹300/(500g)</center></td>
+		<td><center><img src = "D:\IP Project Final\Doppio.jpeg" ><br>Doppio : ₹300/(500g)</center></td>
+		<td><center><img src = "D:\IP Project Final\Espresso.jpeg" ><br>Espresso : ₹300/(500g)</center></td>
+		</tr>
+		<tr>
+		<td><center><img src = "D:\IP Project Final\Ristretto.jpeg" ><br>Ristretto : ₹300/(500g)</center></td>
+		<td><center><img src = "D:\IP Project Final\Robusta coffee.jpeg" ><br>Robusta coffee : ₹300/(500g)</center></td>
+		<td><center><img src = "D:\IP Project Final\Turkish coffee.jpeg" ><br>Turkish coffee : ₹300/(500g)</center></td>
+		</tr>
+	</table>
+	</center>
+	</div><br><br><br>
+	<h2>
+	<center>ORDER FORM</center>
+	</h2>
+	<section>
+  
+        <form>
+            <label for="product">Select a Coffee:</label>
+            <select id="product" name="product">
+                <option value="Cappuccino : ₹300/(500g)">Cappuccino : ₹300/(500g)</option>
+                <option value="Caffè Americano : ₹300/(500g)">Caffè Americano : ₹300/(500g)</option>
+                <option value="Caffè macchiato : ₹300/(500g)">Caffè macchiato : ₹300/(500g)</option>
+				<option value="Cortado : ₹300/(500g)">Cortado : ₹300/(500g)</option>
+                <option value="Doppio : ₹300/(500g)">Doppio : ₹300/(500g)</option>
+				<option value="Espresso : ₹300/(500g)">Espresso : ₹300/(500g)</option>
+                <option value="Ristretto : ₹300/(500g)">Ristretto : ₹300/(500g)</option>
+				<option value="Robusta coffee : ₹300/(500g)">Robusta coffee : ₹300/(500g)</option>
+				<option value="Turkish coffee : ₹300/(500g)">Turkish coffee : ₹300/(500g)</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+			
+			<label for="phone">Your phone number:</label>
+			<input type="tel" id="phone" name="phone" placeholder="012-3456-789" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" required>
+			<small>Format: 023-3456-789</small><br><br>
+			
+			<label for="address">Your address:</label>
+			<textarea id="Address" name="Address" rows="4" required></textarea>
+			
+			<h4>Payment method only Cash On Delivery (cod)<h4>
+
+            <button type="button" onclick="done()">Done</button>
+        </form>
+    </section>
+	<footer>
+        <p>&copy; 2023 Coffee Tree</p>
+    </footer>
+	<script>
+        function done() {
+                      
+                alert('Click Ok to proceed.');
+                // Redirect to the confirmation page
+                window.location.href = 'confirmation.html';
+            
+        }
+    </script>
+</body>
+</html>
+
+		
